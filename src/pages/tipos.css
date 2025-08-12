@@ -1,0 +1,17 @@
+.tipos {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.tipo-tag {
+  font-size: 0.7rem;
+  background: rgba(255, 255, 255, 0.753);
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-weight: bold;
+  color: #333;
+  border: 1px solid #999;
+}

@@ -1,0 +1,122 @@
+.poke-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.poke-card {
+  width: 150px;            
+  padding: 10px;           
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  background-color: #f9f9f9;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.poke-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ebf0ff;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.hp-container {
+  flex: 1;
+  margin-right: 6px;
+}
+
+.hp-text {
+  font-size: 12px;       
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.hp-bar-outer {
+  width: 100%;
+  height: 10px;          
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.hp-bar-inner {
+  height: 100%;
+  transition: width 0.3s ease;
+  background-color: #4caf50; 
+}
+
+/* BOTÃO DE CURAR ❤️ */
+.heal-button {
+  background-color: #73b378;
+  color: white;
+  border: none;
+  font-size: 14px;      
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.heal-button:disabled {
+  background-color: #ffffff;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.poke-img-container {
+  margin: 8px 0;
+}
+
+.poke-img {
+  width: 100px;        
+  height: 100px;
+}
+
+.tipos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.tipo-badge {
+  font-size: 12px;      
+  padding: 3px 6px;
+  border-radius: 6px;
+  background-color: #999;
+  color: white;
+  font-weight: 600;
+}
+
+.poke-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.poke-card button:not(.heal-button):disabled  {
+  background: #cacaca;
+  border: none;
+  color: white;
+  padding: 6px 10px;   
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.poke-card button:not(.heal-button):disabled {
+  background: #f44336;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.9;
+}

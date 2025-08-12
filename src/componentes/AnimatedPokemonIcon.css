@@ -1,0 +1,43 @@
+.pokemon-icon {
+  transition: color 0.3s ease;
+  color: #000;
+  display: inline-block;
+}
+
+@keyframes tremidaCrescimento {
+  0%   { transform: scale(1) translateX(0); }
+  10%  { transform: scale(1.1) translateX(-2px); }
+  20%  { transform: scale(1.1) translateX(2px); }
+  30%  { transform: scale(1.1) translateX(-2px); }
+  40%  { transform: scale(1.1) translateX(2px); }
+  50%  { transform: scale(1.1) translateX(0); }
+  60%  { transform: scale(1.1) translateX(-2px); }
+  70%  { transform: scale(1.1) translateX(2px); }
+  80%  { transform: scale(1.1) translateX(-2px); }
+  90%  { transform: scale(1.1) translateX(2px); }
+  100% { transform: scale(1) translateX(0); }
+}
+
+.animar-tremida {
+  animation: tremidaCrescimento 1.5s ease-in-out forwards;
+}
+
+.captura-sucesso {
+  color: #28a745;
+  animation: piscarSucesso 5s ease forwards;
+}
+
+@keyframes piscarSucesso {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.captura-falha {
+  color: #dc3545;
+  animation: piscarFalha 5s ease forwards;
+}
+
+@keyframes piscarFalha {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}

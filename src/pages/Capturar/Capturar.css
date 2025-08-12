@@ -1,0 +1,140 @@
+/* mira */
+.mira-container {
+  width: 100%;
+  padding: 20px;
+  user-select: none;
+}
+
+.barra-wrapper {
+  position: relative;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Zona amarela (alvo maior) */
+.zona-amarela {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.4);
+  border-radius: 10px;
+  pointer-events: none;
+  top: 0;
+}
+
+/* Zona vermelha (alvo menor) */
+.zona-vermelha {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.6);
+  border-radius: 10px;
+  pointer-events: none;
+  top: 0;
+}
+
+/* Barra que se move */
+.barra-movel {
+  position: absolute;
+  top: 5px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  border-radius: 6px;
+  transition: left 0.02s linear;
+  user-select: none;
+}
+
+/* Botões */
+.botoes {
+  margin-top: 10px;
+}
+
+/* Texto bônus */
+.bonus-text {
+  margin-top: 10px;
+}
+
+
+.captura-container img {
+  width: 120px;
+  height: 120px;
+}
+
+/* Ajustes para os selects */
+select {
+  padding: 6px 8px;
+  margin-left: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Botões principais */
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Erro */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+/* Container fixo para as toasts */
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 9999;
+  pointer-events: none; /* pra não atrapalhar clique */
+}
+
+/* Cada mensagem */
+.toast {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  pointer-events: auto;
+  user-select: none;
+  animation: fadeinout 2s forwards;
+}
+
+
+
+/* Animação simples para aparecer e sumir */
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

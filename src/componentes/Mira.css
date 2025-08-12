@@ -1,0 +1,22 @@
+.icone-captura {
+  font-size: 32px;
+  transition: transform 0.2s;
+}
+
+.captura-sucesso {
+  animation: crescerTremer 0.5s ease-in-out 3;
+  color: green;
+}
+
+.captura-fracasso {
+  animation: crescerTremer 0.5s ease-in-out 3;
+  color: red;
+}
+
+@keyframes crescerTremer {
+  0% { transform: scale(1) translateX(0); }
+  25% { transform: scale(1.3) translateX(-2px); }
+  50% { transform: scale(1.1) translateX(2px); }
+  75% { transform: scale(1.2) translateX(-2px); }
+  100% { transform: scale(1) translateX(0); }
+}
