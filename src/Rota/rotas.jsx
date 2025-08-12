@@ -40,6 +40,14 @@ export default function Rotas() {
           </AuthRoute>
         }
       />
+       <Route
+        path="/cadastro"
+        element={
+          <AuthRoute type="public">
+            <Cadastro />
+          </AuthRoute>
+        }
+      />
       
       <Route
         path="/capturar"

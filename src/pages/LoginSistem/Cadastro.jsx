@@ -150,7 +150,6 @@ if (pokesError) {
 
   return (
     <div style={{ maxWidth: '400px', margin: 'auto' }}>
-      <Link to="/noticias">Notícias</Link>
       <h2>Cadastrar</h2>
 
       <CadastroForm 

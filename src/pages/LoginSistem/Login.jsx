@@ -24,7 +24,6 @@ export default function Login() {
 
   return (
     <div>
-    <Link to="/noticias">Noticias</Link>
       <h2>Entrar</h2>
       <form onSubmit={handleLogin}>
         <input
