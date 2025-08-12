@@ -198,9 +198,9 @@ function Maps() {
     }, []);
 
 
-  return (
-    <div className="maps-container">
-      <PokemonLocationUpdater />
+    // <PokemonLocationUpdater /> 
+    return (
+      <div className="maps-container">
       <h1>Mapa da Pokédex</h1>
 
       <div className="map-layout">
